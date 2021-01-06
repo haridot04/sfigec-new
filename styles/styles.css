@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "Indulekha";
+  src: url(../fonts/FML-Indulekha.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ashique";
+  src: url("../fonts/ashique_ml_ashu_condensed_bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/ashique_ml_ashu_condensed_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: white;
+}
+h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-logo p {
+  margin: auto;
+  color: white;
+}
+
+.header-logo img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 45%;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.title-card {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url("../images/sfi-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-card img {
+  width: 80px;
+  height: auto;
+}
+
+.gec {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  background-image: url("../images/gec.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gec h3 {
+  padding-left: 2%;
+  font-weight: 900;
+  font-size: 2rem;
+  color: red;
+}
+
+.gec .custom {
+  font-weight: 400;
+  color: white;
+}
+
+.about {
+  padding: 5% 17% 5% 2%;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hr-tag {
+  padding-top: 0.4%;
+}
+
+.hr-tag hr {
+  background-color: #707070;
+  width: 98%;
+  margin: auto;
+}
+
+.content {
+  padding: 5% 2%;
+}
+
+.para {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-sfi {
+  width: 70%;
+}
+
+.join-sfi {
+  width: 30%;
+  text-align: center;
+}
+
+.join-sfi img {
+  width: 8rem;
+  padding-bottom: 1rem;
+}
+
+.join-sfi h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: red;
+}
+
+span {
+  font-weight: 300;
+}
+
+.content h2 {
+  color: red;
+  font-size: 2rem;
+}
+
+.slogan {
+  padding: 5% 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.slogan h1 {
+  border: 1px solid #707070;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding: 1%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 119, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.martyrs {
+  padding: 5% 2%;
+}
+
+.martyrs h1 {
+  color: red;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.mal {
+  font-family: "Indulekha";
+  font-size: 1.2rem;
+}
+
+.mal-ashi {
+  font-family: "Ashique";
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-line {
+  border-left: 0.5px solid #7a7a7a;
+  height: 2rem;
+  margin: 0 10px 0 10px;
+}
+
+footer {
+  height: 30vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h2 {
+  padding-top: 1%;
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.ico {
+  color: #7a7a7a;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 5%;
+  }
+  .nav-links li {
+    opacity: 0px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .active {
+    display: none;
+  }
+
+  /* Custom Styles */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .title-card {
+    height: 30vh;
+    background-size: cover;
+  }
+
+  .gec {
+    height: 25vh;
+  }
+
+  .gec h3 {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    padding-right: 4%;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  .mal {
+    font-size: 0.8rem;
+  }
+
+  .join-sfi h3 {
+    font-size: 1.5rem;
+  }
+
+  .slogan h1 {
+    font-size: 1.3rem;
+    padding: 2%;
+  }
+
+  .martyrs h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    height: 20vh;
+  }
+
+  footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .ico {
+    font-size: 1.3rem;
+  }
+}
