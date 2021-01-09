@@ -210,6 +210,23 @@ span {
   font-size: 3rem;
 }
 
+.unit-pgms {
+  padding: 5% 2%;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.images img {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
 .mal {
   font-family: "Indulekha";
   font-size: 1.2rem;
