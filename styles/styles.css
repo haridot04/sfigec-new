@@ -369,4 +369,13 @@ footer h2 {
   .ico {
     font-size: 1.3rem;
   }
+
+  .images {
+    overflow: auto;
+    justify-content: left;
+  }
+
+  .images img {
+    width: 8rem;
+  }
 }
