@@ -116,7 +116,7 @@ nav {
   padding-left: 2%;
   font-weight: 900;
   font-size: 2rem;
-  color: red;
+  color: #af0000;
 }
 
 .gec .custom {
@@ -167,7 +167,7 @@ nav {
 .join-sfi h3 {
   font-size: 2rem;
   font-weight: 900;
-  color: red;
+  color: #af0000;
 }
 
 span {
@@ -175,7 +175,7 @@ span {
 }
 
 .content h2 {
-  color: red;
+  color: #af0000;
   font-size: 2rem;
 }
 
@@ -205,7 +205,7 @@ span {
 }
 
 .martyrs h1 {
-  color: red;
+  color: #af0000;
   text-align: center;
   font-size: 3rem;
 }
@@ -259,13 +259,47 @@ footer {
 
 footer h2 {
   padding-top: 1%;
-  color: red;
+  color: #af0000;
   text-align: center;
   font-size: 2rem;
 }
 
 .ico {
   color: #7a7a7a;
+}
+
+.content-unit {
+  padding: 2% 15% 2% 5%;
+}
+
+.content-unit h2 {
+  color: #af0000;
+  font-size: 2rem;
+}
+
+.content-unit h3 {
+  font-size: 1.5rem;
+}
+
+.secretary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.secretary img {
+  width: 13rem;
+  padding-right: 2rem;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -340,6 +374,18 @@ footer h2 {
     font-size: 1.5rem;
   }
 
+  .content-unit {
+    padding: 3% 5%;
+  }
+
+  .content-unit h2 {
+    font-size: 1rem;
+  }
+
+  .content-unit h3 {
+    font-size: 0.8rem;
+  }
+
   p,
   .mal {
     font-size: 0.8rem;
@@ -377,5 +423,10 @@ footer h2 {
 
   .images img {
     width: 10rem;
+  }
+
+  .secretary img {
+    width: 4rem;
+    padding-right: 0.4rem;
   }
 }
