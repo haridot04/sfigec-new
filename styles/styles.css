@@ -215,7 +215,7 @@ span {
 }
 
 .images {
-  display: block ruby;
+  display: ruby;
   flex-direction: row;
   justify-content: center;
 }
