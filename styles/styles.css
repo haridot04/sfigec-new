@@ -476,5 +476,6 @@ footer h2 {
 
   .images-flex img {
     width: 100%;
+    margin: 0;
   }
 }
