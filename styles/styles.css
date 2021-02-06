@@ -329,6 +329,18 @@ footer h2 {
   border-radius: 7px;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.22);
 }
+
+.images-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-flex img {
+  padding: 1rem;
+  width: 25rem;
+  margin: auto;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     overflow-x: hidden;
@@ -455,5 +467,14 @@ footer h2 {
   .secretary img {
     width: 4rem;
     padding-right: 0.4rem;
+  }
+
+  .images-flex {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .images-flex img {
+    width: 90%;
   }
 }
