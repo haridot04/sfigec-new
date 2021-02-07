@@ -211,6 +211,7 @@ span {
 }
 
 .unit-pgms {
+  display: block;
   padding: 5% 2%;
 }
 
@@ -221,7 +222,12 @@ span {
 }
 
 .images a {
-  width: 100%;
+  width: max-content;
+}
+
+.unit-pgms a img {
+  width: auto;
+  height: 20rem;
 }
 
 .images img {
@@ -229,6 +235,10 @@ span {
   display: flex;
   justify-content: space-between;
   width: 20%;
+}
+
+.no-shrink {
+  display: block;
 }
 
 .mal {
@@ -462,6 +472,9 @@ footer h2 {
 
   .images img {
     width: 10rem;
+  }
+  .unit-pgms a img {
+    height: 14.28rem;
   }
 
   .secretary img {
